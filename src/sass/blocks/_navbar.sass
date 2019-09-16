@@ -1,0 +1,23 @@
+.navbar
+	position: absolute
+	z-index: 1
+	top: 110px
+	left: 290px
+	right: 290px
+	&-block
+		background-color: $main-color
+	&-list
+		display: flex
+		justify-content: space-between
+		padding: 20px 60px
+		margin: 0
+		&__item
+			list-style-type: none
+			&:hover
+				background-color: red
+
+		&__link
+			text-decoration: none
+			color: $text-color
+			font-size: 14px
+			+med

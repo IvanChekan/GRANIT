@@ -1,0 +1,44 @@
+.card
+	&-block
+		flex-basis: 24%
+		text-align: center
+		border: 2px solid $border-card
+		padding: 20px
+		&__img
+			margin-bottom: 22px
+			position: relative
+		&__action
+			background-color:
+			position: absolute
+			font-size: 10px
+			background-color: $action-color
+			color: #ffffff
+			padding: 5px 11px
+			top: 10px
+			left: 10px
+		&__title
+			font-size: 13px
+			+reg
+			margin-bottom: 24px
+		&__button
+			width: 100%
+			font-size: 12px
+			+med
+	&-price
+		display: flex
+		justify-content: space-around
+		align-items: center
+		margin-bottom: 25px
+		&__old
+			color: $header-color
+			font-size: 10px
+		&__new
+			+med
+			color: $price-color
+			&s
+				+med
+	&s
+		&-block
+			display: flex
+			justify-content: space-between
+			flex-wrap: wrap

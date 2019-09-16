@@ -1,0 +1,27 @@
+.goods
+	display: flex
+	justify-content: space-between
+	flex-wrap: wrap
+	&-block
+		flex-basis: 32%
+		text-align: center
+		border: 2px solid $border-card
+		padding: 38px 23px
+		&__image
+			height: 170px
+		&__title
+			font-size: 15px
+			+med
+			margin-bottom: 20px
+		&__description
+			font-size: 13px
+			margin-bottom: 29px
+		&__price
+			display: block
+			+bold
+			font-size: 16px
+			margin-bottom: 32px
+		&__button
+			+med
+			padding: 15px 55px
+			font-size: 12px

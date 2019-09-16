@@ -1,0 +1,41 @@
+.header
+	padding: 33px 0 60px
+	&-block
+		display: flex
+		justify-content: space-between
+		align-items: center
+	&__logo
+		display: flex
+		align-items: center
+	&__image
+		margin-right: 10px
+		width: 40px
+		height: 40px
+	&-blocks
+		display: flex
+		flex-direction: column
+		&__title
+			text-transform: uppercase
+			+bold
+			font-size: 20px
+			margin-bottom: 9px
+		&__subtitle
+			font-size: 11px
+			color: $header-color
+	&__info
+		display: flex
+	&__button
+		+med
+		margin-left: 31px
+		background-color: transparent
+		border: 2px solid #292929
+	&__phone
+		+med
+		margin-bottom: 10px
+		font-size: 18px
+	&__addres
+		font-size: 11px
+		color: $header-color
+	&__contacts
+		flex-direction: column
+		display: flex

@@ -1,0 +1,23 @@
+.step
+	display: flex
+	justify-content: space-around
+	&s
+		background-color: $section-color
+	&-block
+		flex-basis: 32%
+		text-align: center
+		border: 2px solid #ffffff
+		padding: 40px 44px
+		&:hover
+			box-shadow: 0 9px 21px rgba(0, 0, 0, 0.05)
+			background-color: $text-light
+			transition: 0.3s
+		&__img
+			display: inline-block
+			margin-bottom: 40px
+		&__title
+			+med
+			font-size: 15px
+			margin-bottom: 20px
+		&__text
+			font-size: 12px
