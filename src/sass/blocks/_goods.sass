@@ -7,8 +7,6 @@
 		text-align: center
 		border: 2px solid $border-card
 		padding: 38px 23px
-		&__image
-			height: 170px
 		&__title
 			font-size: 15px
 			+med
@@ -25,3 +23,41 @@
 			+med
 			padding: 15px 55px
 			font-size: 12px
+
+@media ( max-width:1024px )
+	.goods
+		display: flex
+		justify-content: space-around
+		&-block
+			flex-basis: 47%
+			padding: 20px 15px
+			margin-bottom: 30px
+@media ( max-width:768px )
+	.section
+		padding-top: 40px
+		&__title
+			margin-bottom: 30px
+	.goods
+		display: flex
+		justify-content: space-around
+		&-block
+			flex-basis: 51%
+			padding: 15px 15px
+			margin-bottom: 15px
+			&__title
+				margin-bottom: 15px
+			&__description
+				font-size: 11px
+@media ( max-width:320px )
+	.section
+		&__title
+			font-size: 13px
+	.goods
+		&-block
+			&__description
+				margin-bottom: 10px
+			&__price
+				font-size: 12px
+				margin-bottom: 10px
+			&__button
+				font-size: 11px

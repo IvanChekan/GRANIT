@@ -1,0 +1,42 @@
+
+.blocks
+	display: flex
+	justify-content: space-between
+.footer
+	background-color: $footer-color
+	color: $text-light
+	&-block
+		&__logo
+			display: flex
+			margin-bottom: 55px
+		&__text
+			margin-left: 12px
+		&__title
+			display: block
+			text-transform: uppercase
+			+bold
+			font-size: 19px
+		&__description
+			font-size: 10px
+		&__data
+			font-size: 12px
+	&-contact
+		display: flex
+		flex-direction: column
+		text-align: right
+		&__phone
+			font-size: 18px
+			margin-bottom: 10px
+			+med
+		&__link
+			color: $text-light
+		&__relation
+			font-size: 11px
+			margin-bottom: 30px
+		&__button
+			border: 2px solid $text-light
+			background-color: transparent
+			padding: 15px 23px
+			color: $text-light
+			font-size: 12px
+			+med

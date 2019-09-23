@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>GRANIT</title>
+	<script defer src="js/all.min.js"></script>
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
@@ -25,6 +26,12 @@
 						<span class="header-blocks__subtitle">Доставка нерудных материалов</span>
 					</div>
 				</div>
+				<div class="header-menu">
+					<a href="#" class="header-menu__btn">
+						<span></span>
+					</a>
+				</div>
+
 				<div class="header__info">
 					<div class="header__contacts">
 						<a href="tel: 8800342-13-33" class="phone header__phone">8 800 342-13-33</a>
@@ -32,46 +39,65 @@
 					</div>
 					<button class="button header__button">Обратный звонок</button>
 				</div>
-			</div>
-		</div>
-	</header>
-	<!-- header -->
-	<div class="navbar">
-		<div class="container">
-			<div class="navbar-block">
-				<ul class="navbar-list">
-					<li class="navbar-list__item"><a href="#" class="navbar-list__link">Главная</a></li>
-					<li class="navbar-list__item"><a href="#" class="navbar-list__link">Каталог</a></li>
-					<li class="navbar-list__item"><a href="#" class="navbar-list__link">Услуги</a></li>
-					<li class="navbar-list__item"><a href="#" class="navbar-list__link">Доставка</a></li>
-					<li class="navbar-list__item"><a href="#" class="navbar-list__link">О компании</a></li>
-					<li class="navbar-list__item"><a href="#" class="navbar-list__link">Контакты</a></li>
-				</ul>
-			</div>
 
+			</div>
 		</div>
-	</div>
-	<!-- navbar -->
-	<section class="delivery">
-		<div class="delivery-overlay">
-			<div class="container">
-				<div class="delivery-block">
-					<h1 class="delivery__title">быстрая доставка </h1>
-					<p class="delivery__subtitle">бетона, щебня, песка и других нерудных материалов по Москве и Московской области
-					</p>
-					<button class="button delivery__button">Подробнее о доставке</button>
-					<span class="delivery__description">или <a href="#" class="delivery__link">перейти в каталог</a></span>
+
+
+
+
+
+
+	</header>
+	<section class="content">
+		<div class="container">
+			<div class="navbar">
+				<div class="navbar-block">
+
+					<ul class="navbar-list">
+
+						<li class="navbar-list__item">
+							<a href="#" class="navbar-list__link">Главная</a>
+						</li>
+						<li class="navbar-list__item">
+							<a href="#" class="navbar-list__link">Каталог</a>
+						</li>
+						<li class="navbar-list__item">
+							<a href="#" class="navbar-list__link">Услуги</a>
+						</li>
+						<li class="navbar-list__item">
+							<a href="#" class="navbar-list__link">Доставка</a>
+						</li>
+						<li class="navbar-list__item">
+							<a href="#" class="navbar-list__link">О компании</a>
+						</li>
+						<li class="navbar-list__item">
+							<a href="#" class="navbar-list__link">Контакты</a>
+						</li>
+
+					</ul>
 				</div>
+
+			</div>
+			<div class="content-block">
+				<h1 class="content__title">быстрая доставка </h1>
+				<p class="content__subtitle">бетона, щебня, песка и других нерудных материалов по Москве и Московской
+					области
+				</p>
+				<button class="button content__button">Подробнее о доставке</button>
+				<span class="content__description">или <a href="#" class="content__link">перейти в каталог</a></span>
 			</div>
 		</div>
 	</section>
-	<!-- /.delivery -->
+	<!-- /.contant -->
 	<section class="section">
 		<div class="container">
-			<h3 class="section-title">Всегда в наличии</h3>
+			<h3 class="section__title">Всегда в наличии</h3>
 			<div class="goods">
 				<div class="goods-block">
-					<img src="img/goods/sand.png" alt="sand" class="goods-block__image">
+					<div class="goods-block__image">
+						<img src="img/goods/sand.png" alt="sand" class="goods-block__image">
+					</div>
 					<div class="goods-block__title">Песок речной</div>
 					<p class="goods-block__description">Мелкий речной песок повышает прочность, долговечность и
 						морозоустойчивость растворов, в состав которых он входит.</p>
@@ -79,7 +105,10 @@
 					<button class="button goods-block__button">Подробнее</button>
 				</div>
 				<div class="goods-block">
-					<img src="img/goods/ground.png" alt="graund" class="goods-block__image">
+					<div class="goods-block__image">
+						<!-- <img src="img/goods/ground.png" alt="graund" class="goods-block__image"> -->
+						<img src="img/goods/sand.png" alt="sand" class="goods-block__image">
+					</div>
 					<div class="goods-block__title">Грунт</div>
 					<p class="goods-block__description">Мелкий речной песок повышает прочность, долговечность и
 						морозоустойчивость растворов, в состав которых он входит.</p>
@@ -87,7 +116,10 @@
 					<button class="button goods-block__button">Подробнее</button>
 				</div>
 				<div class="goods-block">
-					<img src="img/goods/gravel.png" alt="gravel" class="goods-block__image">
+					<div class="goods-block__image">
+						<!-- <img src="img/goods/gravel.png" alt="gravel" class="goods-block__image"> -->
+						<img src="img/goods/sand.png" alt="sand" class="goods-block__image">
+					</div>
 					<div class="goods-block__title">Щебень</div>
 					<p class="goods-block__description">Мелкий речной песок повышает прочность, долговечность и
 						морозоустойчивость растворов, в состав которых он входит.</p>
@@ -98,9 +130,9 @@
 		</div>
 	</section>
 	<!-- /.section goods -->
-	<section class="section steps">
+	<!-- <section class="section steps">
 		<div class="container">
-			<h3 class="section-title">Наши преимущества</h3>
+			<h3 class="section__title">Наши преимущества</h3>
 			<div class="step">
 				<div class="step-block">
 					<div class="step-block__img">
@@ -129,11 +161,11 @@
 				</div>
 			</div>
 		</div>
-	</section>
+	</section> -->
 	<!-- step -->
-	<section class="section stock">
+	<!-- <section class="section stock">
 		<div class="container">
-			<h3 class="section-title">Популярные товары</h3>
+			<h3 class="section__title">Популярные товары</h3>
 			<div class="cards-block">
 				<div class="card-block">
 					<div class="card-block__img">
@@ -182,6 +214,82 @@
 			</div>
 		</div>
 	</section>
+	<section class="section pick">
+		<div class="container">
+			<h3 class="section__title">Наши услуги</h3>
+			<div class="pick-blocks">
+				<div class="pick-block">
+
+					<img src="img/pick/image-1.png" alt="cargo" class="pick-block__image">
+					<sapn class="pick-block__title">Аренда самосвала</sapn>
+				</div>
+				<div class="pick-block">
+					<img src="img/pick/image-2.png" alt="cargo" class="pick-block__image">
+					<sapn class="pick-block__title">Аренда спецтехники</sapn>
+				</div>
+				<div class="pick-block">
+					<img src="img/pick/image-3.png" alt="cargo" class="pick-block__image">
+					<span class="pick-block__title">Рытье траншеи</span>
+				</div>
+			</div>
+		</div>
+	</section> -->
+	<!-- pick -->
+	<!-- <section class="section contacts">
+		<div class="container">
+			<div class="contacts__image"><img src="img/contacts/point.png" alt=""></div>
+			<div class="contacts-block">
+				<div class="contact">
+					<h3 class="contact__title">Контакты</h3>
+					<ul class="contacts-list">
+						<li class="contacts-list__item">
+							<div class="contacts-list__icon">
+								<img src="img/contacts/phone-receiver.png" alt="phone">
+							</div>
+							<div class="contacts-list__number">
+								<span class="contacts-list__phone"><a href="tel:8800034-23-34">8 800 034-23-34</a></span>
+								<span class="contacts-list__phone"><a href="tel:8495034-23-34">8 495 034-23-34</a></span>
+							</div>
+						</li>
+						<li class="contacts-list__item">
+							<div class="contacts-list__icon">
+								<img src="img/contacts/location-pin.png" alt="addres">
+							</div>
+							<span class="contacts-list__addres">Московская обл. г. Балашиха,<br> пер. Столовой, д.23, кор. 34</span>
+						</li>
+						<li class="contacts-list__item">
+							<div class="contacts-list__icon">
+								<img src="img/contacts/close-envelope.png" alt="email">
+							</div>
+							<span class="contacts-list__email"><a href="#" class="contacts-list__link">Info@stroika.ru</a></span>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="section footer">
+		<div class="container">
+			<div class="blocks">
+				<div class="footer-block">
+					<div class="footer-block__logo">
+						<div class="footer-block__image"><img src="img/footer/cargo.png" alt="cargo"></div>
+						<div class="footer-block__text">
+							<span class="footer-block__title">granit</span>
+							<span class="footer-block__description">Доставка нерудных материалов</span>
+						</div>
+					</div>
+					<span class="footer-block__data">© 2016. Гранти</span>
+				</div>
+				<div class="footer-contact">
+					<span class="footer-contact__phone"><a href="tel:8800342-13-33" class="footer-contact__link">8 800
+							342-13-33</a></span>
+					<span class="footer-contact__relation">Бесплатный звонок по России</span>
+					<button class="button footer-contact__button">Обратный звонок</button>
+				</div>
+			</div>
+		</div>
+	</section> -->
 </body>
 
 </html>

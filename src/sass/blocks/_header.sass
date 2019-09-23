@@ -39,3 +39,25 @@
 	&__contacts
 		flex-direction: column
 		display: flex
+	&-menu
+		display: none
+		&__btn
+			display: inline-block
+			background-color: $main-color
+			width: 60px
+			height: 35px
+			border-radius: 10%
+@media ( max-width:768px )
+	.header
+		padding: 10px 0 15px
+		&__contacts
+			display: none
+		&-blocks
+			display: none
+		&__button
+			font-size: 11px
+			padding: 10px 12px
+		&-menu
+			display: block
+			display: flex
+			align-items: center

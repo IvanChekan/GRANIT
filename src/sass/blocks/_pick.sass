@@ -1,0 +1,29 @@
+.pick
+	background-color: $section-color
+	&-block
+		text-align: center
+		flex-basis: 32%
+		border: 2px solid $text-light
+		padding: 50px 20px
+		&__image
+			display: inline-block
+			height: 127px
+		&__title
+			position: relative
+			display: inline-block
+			margin-top: 30px
+			font-size: 15px
+			+med
+			&:before
+				content: ''
+				bottom: 0
+				left: 0
+				position: absolute
+				width: 100%
+				height: 1px
+				background-color: $text-color
+				opacity: 0.3
+		&s
+			display: flex
+			justify-content: space-between
+			flex-wrap: wrap
