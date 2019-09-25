@@ -42,22 +42,80 @@
 	&-menu
 		display: none
 		&__btn
-			display: inline-block
+			position: relative
 			background-color: $main-color
-			width: 60px
-			height: 35px
+			opacity: 0.8
+			width: 45px
+			height: 45px
 			border-radius: 10%
+		&__active
+			&::before
+				transform: rotate(-35deg)
+		&__active
+			&::after
+		&__line
+			display: block
+			position: absolute
+			top: 50%
+			left: 50%
+			width: 20px
+			height: 2px
+			background-color: $text-color
+			margin-left: -10px
+			&::before
+				display: block
+				transform: translateY(-5px)
+				content: ''
+				position: absolute
+				top: 50%
+				left: 50%
+				width: 20px
+				height: 2px
+				background-color: $text-color
+				margin-left: -10px
+			&::after
+				display: block
+				transform: translateY(3px)
+				content: ''
+				position: absolute
+				top: 50%
+				left: 50%
+				width: 20px
+				height: 2px
+				background-color: $text-color
+				margin-left: -10px
+
 @media ( max-width:768px )
 	.header
 		padding: 10px 0 15px
 		&__contacts
 			display: none
 		&-blocks
-			display: none
+			&__title
+				align-items: center
+				margin-bottom: 0
+			&__subtitle
+				display: none
 		&__button
 			font-size: 11px
+			margin-left: 0
 			padding: 10px 12px
 		&-menu
 			display: block
-			display: flex
-			align-items: center
+			&__btn
+				position: fixed
+				left: 0px
+				top: 75px
+@media ( max-width:320px )
+	.header
+		&__image
+			margin-right: 5px
+			width: 35px
+			height: 35px
+		&-blocks
+			&__title
+				font-size: 16px
+		&-menu
+			&__btn
+				width: 30px
+				height: 30px
