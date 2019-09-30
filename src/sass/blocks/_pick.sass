@@ -6,7 +6,6 @@
 		border: 2px solid $text-light
 		padding: 50px 20px
 		&__image
-			display: inline-block
 			height: 127px
 		&__title
 			position: relative
@@ -16,7 +15,7 @@
 			+med
 			&:before
 				content: ''
-				bottom: 0
+				bottom: -2px
 				left: 0
 				position: absolute
 				width: 100%
@@ -27,3 +26,22 @@
 			display: flex
 			justify-content: space-between
 			flex-wrap: wrap
+@media (max-width:1024px)
+	.pick
+		&-block
+			flex-basis: 48.5%
+			margin-bottom: 20px
+			&__child
+				flex-basis: 100%
+@media (max-width:768px)
+	.pick
+		&-block
+			&s
+				flex-direction: column
+@media (max-width:320px)
+	.pick
+		&-block
+			padding: 30px 15px
+			&__title
+				font-size: 13px
+				margin-top: 10px

@@ -4,20 +4,20 @@
 	&__title
 		font-size: 20px
 		text-transform: uppercase
-		+bold
 		margin-bottom: 53px
 		margin-top: 0
+		+bold
 	&s
 		background-image: url(../img/contacts/card-fon.jpg)
 		background-size: cover
 		background-position: center
 		background-repeat: no-repeat
-		position: relative
 		&__image
 			position: absolute
-			left: 600px
-			top: 227px
+			left: 200px
+			top: 200px
 		&-block
+			position: relative
 			display: flex
 			justify-content: flex-end
 		&-list
@@ -25,7 +25,6 @@
 			list-style-type: none
 			&__item
 				display: flex
-				justify-content: flex-start
 				margin-bottom: 40px
 				&:last-child
 					margin-bottom: 0
@@ -33,9 +32,9 @@
 				margin-right: 8px
 			&__phone
 				display: block
-				+med
 				margin-bottom: 20px
 				font-size: 14px
+				+med
 				&:last-child
 					margin-bottom: 0
 			&__addres
@@ -55,3 +54,31 @@
 					height: 1px
 					background-color: $text-color
 					opacity: 0.3
+
+@media (max-width:1024px)
+	.contact
+		&s
+			&__image
+				display: none
+@media (max-width:768px)
+	.contact
+		padding: 30px 25px
+		&s
+			&-block
+				justify-content: center
+@media (max-width:320px)
+	.contact
+		&__title
+			margin-bottom: 20px
+			font-size: 15px
+		&s
+			&-list
+				&__phone
+					margin-bottom: 10px
+					font-size: 11px
+				&__addres
+					font-size: 11px
+				&__email
+					font-size: 11px
+				&__item
+					margin-bottom: 30px

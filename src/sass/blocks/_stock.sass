@@ -1,14 +1,15 @@
+
 .card
+	&-slider
+		position: relative
 	&-block
-		flex-basis: 24%
 		text-align: center
-		border: 2px solid $border-card
 		padding: 20px
 		&__img
-			margin-bottom: 22px
+			display: inline-block
 			position: relative
+			margin-bottom: 22px
 		&__action
-			background-color:
 			position: absolute
 			font-size: 10px
 			background-color: $action-color
@@ -18,28 +19,46 @@
 			left: 10px
 		&__title
 			font-size: 13px
-			+reg
 			margin-bottom: 24px
-
+			+reg
 		&__button
-			width: 100%
+			padding: 15px 60px
 			font-size: 12px
 			+med
 	&-price
 		display: flex
-		justify-content: space-around
+		justify-content: center
 		align-items: center
 		margin-bottom: 25px
 		&__old
 			color: $header-color
 			font-size: 10px
+			margin-right: 15px
 		&__new
-			+med
 			color: $price-color
-			&s
-				+med
-	&s
+			+med
+.slick
+	&-active
+		outline: none
+.arrows
+	display: flex
+	justify-content: space-between
+	position: relative
+	top: -210px
+.fas
+	font-size: 30px
+	cursor: pointer
+@media (max-width:320px)
+	.card
 		&-block
-			display: flex
-			justify-content: space-between
-			flex-wrap: wrap
+			&__img
+				margin-bottom: 15px
+			&__title
+				margin-top: 0
+				margin-bottom: 15px
+				font-size: 12px
+			&__button
+				font-size: 11px
+		&-price
+			&__new
+				font-size: 14px

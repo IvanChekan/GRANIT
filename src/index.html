@@ -8,6 +8,8 @@
 	<title>GRANIT</title>
 	<script defer src="js/all.min.js"></script>
 	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/slick.css">
+	<!-- <link rel="stylesheet" href="css/slick-theme.css"> -->
 	<link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -157,11 +159,11 @@
 			</div>
 		</div>
 	</section>
-	<!-- step -->
-	<!-- <section class="section stock">
+	<!-- steps -->
+	<section class="section stock">
 		<div class="container">
 			<h3 class="section__title">Популярные товары</h3>
-			<div class="cards-block">
+			<div class="card-slider">
 				<div class="card-block">
 					<div class="card-block__img">
 						<img src="img/stock/cube-1.png" alt="щебень">
@@ -207,33 +209,50 @@
 					<button class="button card-block__button">Купить</button>
 				</div>
 			</div>
+			<div class="arrows stock__arrows">
+				<div class="arrows__left">
+					<i class="fas fa-angle-left"></i>
+				</div>
+				<div class="arrows__right">
+					<i class="fas fa-angle-right"></i>
+				</div>
+			</div>
 		</div>
 	</section>
+
 	<section class="section pick">
 		<div class="container">
 			<h3 class="section__title">Наши услуги</h3>
-			<div class="pick-blocks">
+			<div class="pick-blocks ">
 				<div class="pick-block">
-
-					<img src="img/pick/image-1.png" alt="cargo" class="pick-block__image">
+					<div class="pick-block__image">
+						<img src="img/pick/image-1.png" alt="cargo">
+					</div>
 					<sapn class="pick-block__title">Аренда самосвала</sapn>
 				</div>
 				<div class="pick-block">
-					<img src="img/pick/image-2.png" alt="cargo" class="pick-block__image">
+					<div class="pick-block__image">
+						<img src="img/pick/image-2.png" alt="cargo">
+					</div>
 					<sapn class="pick-block__title">Аренда спецтехники</sapn>
 				</div>
-				<div class="pick-block">
-					<img src="img/pick/image-3.png" alt="cargo" class="pick-block__image">
+				<div class="pick-block pick-block__child">
+					<div class="pick-block__image ">
+						<img src="img/pick/image-3.png" alt="cargo">
+					</div>
+
 					<span class="pick-block__title">Рытье траншеи</span>
 				</div>
 			</div>
 		</div>
-	</section> -->
+	</section>
 	<!-- pick -->
-	<!-- <section class="section contacts">
+	<section class="section contacts">
 		<div class="container">
-			<div class="contacts__image"><img src="img/contacts/point.png" alt=""></div>
 			<div class="contacts-block">
+				<div class="contacts__image">
+					<img src="img/contacts/point.png" alt="point">
+				</div>
 				<div class="contact">
 					<h3 class="contact__title">Контакты</h3>
 					<ul class="contacts-list">
@@ -284,10 +303,16 @@
 				</div>
 			</div>
 		</div>
-	</section> -->
-	<script src="js/btn.js"></script>
+	</section>
+
+
+
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js"
 		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://kit.fontawesome.com/6d3be6ccb7.js" crossorigin="anonymous"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/slider.js"></script>
+	<script src="js/btn.js"></script>
 </body>
 
 </html>

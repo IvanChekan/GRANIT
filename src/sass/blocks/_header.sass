@@ -16,23 +16,23 @@
 		flex-direction: column
 		&__title
 			text-transform: uppercase
-			+bold
 			font-size: 20px
 			margin-bottom: 9px
+			+bold
 		&__subtitle
 			font-size: 11px
 			color: $header-color
 	&__info
 		display: flex
 	&__button
-		+med
 		margin-left: 31px
 		background-color: transparent
 		border: 2px solid #292929
-	&__phone
 		+med
+	&__phone
 		margin-bottom: 10px
 		font-size: 18px
+		+med
 	&__addres
 		font-size: 11px
 		color: $header-color
@@ -48,6 +48,7 @@
 			width: 45px
 			height: 45px
 			border-radius: 10%
+			z-index: 999999
 		&__active
 			&::before
 				transform: rotate(-35deg)

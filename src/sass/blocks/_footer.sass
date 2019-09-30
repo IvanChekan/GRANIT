@@ -14,8 +14,8 @@
 		&__title
 			display: block
 			text-transform: uppercase
-			+bold
 			font-size: 19px
+			+bold
 		&__description
 			font-size: 10px
 		&__data
@@ -40,3 +40,28 @@
 			color: $text-light
 			font-size: 12px
 			+med
+@media (max-width:768px)
+	.footer
+		&-block
+			&__logo
+				align-items: center
+			&__data
+				display: none
+			&__description
+				display: none
+		&-contact
+			&__phone
+				display: none
+			&__relation
+				display: none
+
+@media (max-width:320px)
+	.footer
+		padding-bottom: 0
+		&-block
+			&__title
+				font-size: 16px
+		&-contact
+			&__button
+				font-size: 11px
+				padding: 10px 12px
